@@ -17,3 +17,14 @@ function fun() {
     x1.style.display = "none";
   }
 }
+
+  function fun3()
+  {
+  var x2 = document.getElementById("div3")
+  if (x2.style.display === "none") {
+    x2.style.display = "block";
+  } else {
+    x2.style.display = "none";
+  }
+}
+  
