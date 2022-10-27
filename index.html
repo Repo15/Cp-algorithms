@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CPalgos</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1><b>CPalogrithms.com</b></h1>
 
-    <p1 style="font-size: 30px;">1.Sieve of Eratosthenes</p1>
+<head>
+  <meta charset="utf-8">
+  <title>CPalgos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
-    <pre style="background-color:black;color: white ;" >
+</head>
+
+<body>
+  <h1><b>CPalogrithms.com</b></h1>
+
+  <p1 style="font-size: 30px;">1.Sieve of Eratosthenes</p1>
+  <br>
+
+  <button onclick="fun()">Toggle code</button>
+
+  <div id="div1">
+    <pre style="background-color:black;color: white ;">
       vector<int> sieve_of_eratosthenes(int sieve)
       {
       vector<int> arr(sieve + 1, 0);
@@ -21,14 +29,20 @@
               arr[j] = 1;
       return arr;
       } </pre>
+  </div>
+  <br>
+  <p1 style="font-size: 30px;">2.GCD</p1>
+  <br>
+  <button onclick="fun2()">Toggle code</button>
 
-      <br>
-      <p1 style="font-size: 30px;">2.GCD</p1>
-
-      <pre style="background-color:black;color: white ;">
+  <div id="div2">
+  <pre style="background-color:black;color: white ;">
         int gcd(int a,int b)
         {
             return (a%b==0)?b:gcd(b,a%b);
         }</pre>
-  </body>
+
+      </div>
+</body>
+
 </html>
