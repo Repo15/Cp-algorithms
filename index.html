@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CPalgos</title>
+  <title>CP ALGOS</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
+
 
 </head>
 
@@ -15,7 +16,9 @@
   <p1 style="font-size: 30px;">1.Sieve of Eratosthenes</p1>
   <br>
 
-  <button onclick="fun()">Toggle code</button>
+  <button id="btn1" onclick="fun()">⬆️</button>
+
+
 
   <div id="div1">
     <pre style="background-color:black;color: white ;">
@@ -33,7 +36,8 @@
   <br>
   <p1 style="font-size: 30px;">2.GCD</p1>
   <br>
-  <button onclick="fun2()">Toggle code</button>
+  <button id="btn2" onclick="fun2()">⬆️</button>
+
 
   <div id="div2">
     <pre style="background-color:black;color: white ;">
@@ -47,31 +51,37 @@
 
   <p1 style="font-size: 30px;">3.MEX</p1>
   <br>
-  <button onclick="fun3()">Toggle code</button>
+  <button id="btn3" onclick="fun3()">⬆️</button>
+
 
   <div id="div3">
     <pre style="background-color:black;color: white ;">
         int mex (const vector<int> & a) {
           static bool used[D+1] = { 0 };
           int c = (int) a.size();
-      
+
           for (int i=0; i<c; ++i)
               if (a[i] <= D)
                   used[a[i]] = true;
-      
+
           int result;
           for (int i=0; ; ++i)
               if (!used[i]) {
                   result = i;
                    break;
               }
-      
+
           for (int i=0; i<c; ++i)
               if (a[i] <= D)
                   used[a[i]] = false;
-      
+
           return result;
       }</pre>
+  </div>
+  <div id="Copyright">
+    <p>
+      © 2022 Satwik Trivedi
+    </p>
   </div>
 </body>
 
