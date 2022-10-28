@@ -5,6 +5,18 @@ function fun() {
     } else {
       x.style.display = "none";
     }
+    var btn1 = document.getElementById('btn1');
+
+
+      if(btn1.textContent == '⬇️')
+      {
+        btn1.textContent = '⬆️';
+      }else
+        {
+          btn1.textContent = '⬇️';
+        }
+
+
   }
 
 
@@ -16,6 +28,16 @@ function fun() {
   } else {
     x1.style.display = "none";
   }
+  var btn2 = document.getElementById('btn2');
+
+
+    if(btn2.textContent == '⬇️')
+    {
+      btn2.textContent = '⬆️';
+    }else
+      {
+        btn2.textContent = '⬇️';
+      }
 }
 
   function fun3()
@@ -26,5 +48,14 @@ function fun() {
   } else {
     x2.style.display = "none";
   }
+  var btn3 = document.getElementById('btn3');
+
+
+    if(btn3.textContent == '⬇️')
+    {
+      btn3.textContent = '⬆️';
+    }else
+      {
+        btn3.textContent = '⬇️';
+      }
 }
-  
